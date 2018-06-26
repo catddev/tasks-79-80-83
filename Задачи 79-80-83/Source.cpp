@@ -1,4 +1,4 @@
-#include<stdio.h>
+ï»¿#include<stdio.h>
 #include<stdlib.h>
 #include<locale.h>
 #include<math.h>
@@ -17,7 +17,7 @@ void main()
 
 start:
 
-	cout << "Çàäà÷à ¹ ";
+	cout << "Ð—Ð°Ð´Ð°Ñ‡Ð° â„– ";
 	cin >> tn;
 
 	switch (tn)
@@ -38,7 +38,7 @@ start:
 	}
 	break;
 	default:
-		cout << "íåò òàêîé çàäà÷è" << endl;
+		cout << "Ð½ÐµÑ‚ Ñ‚Ð°ÐºÐ¾Ð¹ Ð·Ð°Ð´Ð°Ñ‡Ð¸" << endl;
 	}
 	goto start;
 }
