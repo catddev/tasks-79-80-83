@@ -46,7 +46,7 @@ start:
 		{
 			f = f*(i - 1.0)*i;
 			
-			if ((i - 1) % 4 == 0)
+			if (i % 4 == 1)
 				sum = sum + pow(x, i) / f;
 			else
 				sum = sum - pow(x, i) / f;
@@ -63,17 +63,13 @@ start:
 		double sum = 0;
 		int n = 1;
 
-		while (n>0)
+		while (sum <= a)
 		{
 			sum = sum + 1.0 / n;
 			n++;
-			if (sum > a)
-			{
-				cout << endl << "первое число из заданной последовательности, большее, чем число A, равно" << endl;
-				std::cout << std::setprecision(8) << sum << endl << endl << "при N равном" << endl << n << endl << endl;
-				break;
-			}
 		}
+		cout << endl << "первое число из заданной последовательности, большее, чем число A, равно" << endl;
+		std::cout << std::setprecision(8) << sum << endl << endl << "при N равном" << endl << n << endl << endl;
 	}
 	break;
 	default:
